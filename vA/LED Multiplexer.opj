@@ -2,7 +2,9 @@
   (ProjectVersion "19981106")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
-    (Folder "Library")
+    (Folder "Library"
+      (File "..\library1.olb"
+        (Type "Schematic Library")))
     (NoModify)
     (File ".\led multiplexer.dsn"
       (Type "Schematic Design"))
@@ -27,19 +29,19 @@
     (Folder "Include Files"
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
-  (MPSSessionName "tnabelek")
+  (MPSSessionName "Thomas Nabelek")
   (GlobalState
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "\\aerobus3\Users6$\tnabelek\My Documents\Development Projects\LED Multiplexer\led multiplexer.dsn")
+         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\vA\led multiplexer.dsn")
       (Path "Design Resources"
-         "\\aerobus3\Users6$\tnabelek\My Documents\Development Projects\LED Multiplexer\led multiplexer.dsn"
+         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\vA\led multiplexer.dsn"
          "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library" "..\library1.olb")
       (Path "Outputs")
-      (Select "Design Resources"
-         "\\aerobus3\Users6$\tnabelek\My Documents\Development Projects\LED Multiplexer\led multiplexer.dsn"
-         "SCHEMATIC1" "PAGE1"))
+      (Select "Design Resources" "Library" "..\library1.olb"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -47,34 +49,38 @@
         (Placement "44 0 1 -1 -1 -8 -31 0 200 0 150"))
       (Tab 0))
     (Doc
-      (Type "TextFile")
+      (Type "COrPrmBrowserDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 130 1472 130 589"))
+        (Placement "44 0 1 -1 -1 -8 -31 182 1258 182 676"))
       (Path
-         "\\aerobus3\Users6$\tnabelek\My Documents\Development Projects\LED Multiplexer\LED Multiplexer-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net")
-      (Scroll "0"))
+         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\LIBRARY1.OLB")
+      (Package "ARDUINO_PINS")
+      (PartType "1"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 156 1498 156 615")
-        (Scroll "-274 0")
-        (Zoom "100")
+        (Placement "44 2 3 -1 -1 -8 -31 78 1474 78 507")
+        (Scroll "-42 96")
+        (Zoom "123")
         (Occurrence "/"))
       (Path
-         "\\AEROBUS3\USERS6$\TNABELEK\MY DOCUMENTS\DEVELOPMENT PROJECTS\LED MULTIPLEXER\LED MULTIPLEXER.DSN")
+         "C:\USERS\THOMAS NABELEK\DESKTOP\LED MULTIPLEXING\LED_MULTIPLEXER\VA\LED MULTIPLEXER.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1")))
   (PartMRUSelector
-    (VCC_BAR
+    (PORTRIGHT-L
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
-    (VCC
+    (VCC_BAR
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (LW_541C-TYP
       (FullPartName "LW_541C-TYP.Normal")
