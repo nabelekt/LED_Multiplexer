@@ -16,12 +16,20 @@
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
-      (ActiveProfile
-         ".\led multiplexer-pspicefiles\schematic1\multiplexer_sim.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\led multiplexer-pspicefiles\schematic1\multiplexer_sim.sim"
         (DisplayName "SCHEMATIC1-multiplexer_sim")
-        (Type "PSpice Profile")))
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\led multiplexer-pspicefiles\schematic1\potentiometer_sweep.sim"
+        (DisplayName "SCHEMATIC1-potentiometer_sweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\led multiplexer-pspicefiles\schematic1\transistor_r_sweep.sim"
+        (DisplayName "SCHEMATIC1-transistor_r_sweep")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\led multiplexer-pspicefiles\schematic1\potentiometer_sweep.sim"))
     (Folder "Model Libraries"
       (Sort User))
     (Folder "Stimulus Files"
@@ -29,35 +37,35 @@
     (Folder "Include Files"
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
-  (MPSSessionName "Thomas Nabelek")
+  (MPSSessionName "tnabelek")
   (GlobalState
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led multiplexer.dsn")
+         "\\aerobus3\Users6$\tnabelek\My Documents\Development Projects\LED_Multiplexer\stage_2\led multiplexer.dsn")
       (Path "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led multiplexer.dsn"
+         "\\aerobus3\Users6$\tnabelek\My Documents\Development Projects\LED_Multiplexer\stage_2\led multiplexer.dsn"
          "SCHEMATIC1")
       (Path "Design Resources" "Library")
-      (Path "Outputs")
-      (Select "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led multiplexer.dsn"
-         "SCHEMATIC1" "PAGE1"))
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "PSpice Resources" "Simulation Profiles"
+         ".\led multiplexer-pspicefiles\schematic1\multiplexer_sim.sim"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 150"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 1731 0 556"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 130 1526 130 559")
-        (Scroll "184 264")
-        (Zoom "200")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1688 52 511")
+        (Scroll "-348 183")
+        (Zoom "115")
         (Occurrence "/"))
       (Path
-         "C:\USERS\THOMAS NABELEK\DESKTOP\LED MULTIPLEXING\LED_MULTIPLEXER_WITH_TRANSISTORS\VA\LED MULTIPLEXER.DSN")
+         "\\AEROBUS3\USERS6$\TNABELEK\MY DOCUMENTS\DEVELOPMENT PROJECTS\LED_MULTIPLEXER\STAGE_2\LED MULTIPLEXER.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1")))
   (PartMRUSelector
