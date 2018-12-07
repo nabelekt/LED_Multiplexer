@@ -1,7 +1,7 @@
 
-**** 11/27/18 23:44:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/06/18 22:57:10 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\vA\led multiplexer-pspi
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led
 
 
  ****     CIRCUIT DESCRIPTION
@@ -37,12 +37,9 @@ Q_Q-C3         N04814 N00492 0 Q2N3904
 Q_Q-R1         N003111 N05654 N05542 Q2N3904
 Q_Q-R2         N003531 N05701 N05421 Q2N3904
 Q_Q-R3         N003831 N05750 N05419 Q2N3904
-R_R-C1         N02465 N00506  700 TC=0,0 
-R_R-C2         N01883 N00499  700 TC=0,0 
-R_R-C3         N01948 N00492  700 TC=0,0 
-V_Pin-C1         N02465 0 5Vdc
-V_Pin-C2         N01883 0 5Vdc
-V_Pin-C3         N01948 0 5Vdc
+R_R-C1         0 N00506  680 TC=0,0 
+R_R-C2         0 N00499  680 TC=0,0 
+R_R-C3         0 N00492  680 TC=0,0 
 D_LED-R3C3         N05419 N04814 LW_541C-TYP 
 D_LED-R3C2         N05419 N04818 LW_541C-TYP 
 D_LED-R3C1         N05419 N04822 LW_541C-TYP 
@@ -52,18 +49,16 @@ D_LED-R2C1         N05421 N04822 LW_541C-TYP
 D_LED-R1C1         N05542 N04822 LW_541C-TYP 
 D_LED-R1C2         N05542 N04818 LW_541C-TYP 
 D_LED-R1C3         N05542 N04814 LW_541C-TYP 
-R_R-R1         N05654 VCC_BAR  700 TC=0,0 
-R_R-R2         N05701 N06293  700 TC=0,0 
-R_R-R3         N05750 N06354  700 TC=0,0 
-R_R-CL2         N003531 N06025  10 TC=0,0 
-R_R-CL3         N003831 N06025  10 TC=0,0 
-V_VDC         N06025 0 5Vdc
-V_Pin-R2         N06293 0 5Vdc
-V_Pin-R3         N06354 0 5Vdc
-R_R1         N003111 N06025  10 TC=0,0 
+R_R-R1         N05654 0  680 TC=0,0 
+R_R-R2         N05701 0  680 TC=0,0 
+R_R-R3         N05750 0  680 TC=0,0 
+R_R-CL2         N003531 0  10 TC=0,0 
+R_R-CL3         N003831 0  10 TC=0,0 
+R_R-CL1         N003111 0  10 TC=0,0 
+V_Pin-R4         0 0 5Vdc
 
 **** RESUMING multiplexer_sim.cir ****
 .END
 
-ERROR(ORPSIM-15141): Less than 2 connections at node VCC_BAR.
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_Pin-R4. You may break the loop by adding a series resistance
 

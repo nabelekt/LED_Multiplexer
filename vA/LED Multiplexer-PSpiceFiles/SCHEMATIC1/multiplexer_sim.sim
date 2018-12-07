@@ -33,13 +33,13 @@ Notes=
 @End Analysis
 @Analysis: 2 0
 +0 0
-+0 "" 
++0 "Pin-R1" 
 +1 "" 
 +2 "" 
 +3 "" 
-+4 "" 
-+5 "" 
-+6 "" 
++4 "0" 
++5 "10" 
++6 ".005" 
 +7 "" 
 @End Analysis
 @Analysis: 3 0

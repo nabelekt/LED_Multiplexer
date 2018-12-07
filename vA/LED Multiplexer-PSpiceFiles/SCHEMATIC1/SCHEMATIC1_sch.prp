@@ -313,7 +313,6 @@
                 ("device_max_ops")
             )
         )
-        ("VDC")
         ("LW_541C-TYP"
             ("info"
                 ("spice_dsg"	"X")
@@ -387,6 +386,7 @@
                 )
             )
         )
+        ("VDC")
     )
     ("instances"
         ("Q-C1"
@@ -395,7 +395,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"10.51mW")
+                    ("value"	"13.13mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("COMPONENT"
@@ -410,7 +410,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"10.51mW")
+                    ("value"	"13.13mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("COMPONENT"
@@ -425,7 +425,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"10.51mW")
+                    ("value"	"13.13mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("COMPONENT"
@@ -440,7 +440,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"57.34pW")
+                    ("value"	"50.14mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("COMPONENT"
@@ -455,7 +455,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"35.19mW")
+                    ("value"	"34.29mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("COMPONENT"
@@ -470,7 +470,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"35.19mW")
+                    ("value"	"34.29mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("COMPONENT"
@@ -485,12 +485,12 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"700")
+                    ("value"	"680")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"24.70mW")
+                    ("value"	"25.32mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"
@@ -538,12 +538,12 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"700")
+                    ("value"	"680")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"24.70mW")
+                    ("value"	"25.32mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"
@@ -591,12 +591,12 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"700")
+                    ("value"	"680")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"24.70mW")
+                    ("value"	"25.32mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"
@@ -638,58 +638,13 @@
                 ("MAX_TEMP"	"200.0")
             )
         )
-        ("Pin-C1"
-            ("device_name"	"VDC")
-            ("pspice_path"	"V_Pin-C1")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"5Vdc")
-                    ("pspice_param"	"DC")
-                )
-                ("BiasValue Power"
-                    ("value"	"-29.70mW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-            )
-        )
-        ("Pin-C2"
-            ("device_name"	"VDC")
-            ("pspice_path"	"V_Pin-C2")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"5Vdc")
-                    ("pspice_param"	"DC")
-                )
-                ("BiasValue Power"
-                    ("value"	"-29.70mW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-            )
-        )
-        ("Pin-C3"
-            ("device_name"	"VDC")
-            ("pspice_path"	"V_Pin-C3")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"5Vdc")
-                    ("pspice_param"	"DC")
-                )
-                ("BiasValue Power"
-                    ("value"	"-29.70mW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-            )
-        )
         ("LED-R3C3"
             ("device_name"	"LW_541C-TYP")
             ("pspice_path"	"D_LED-R3C3")
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"81.27mW")
+                    ("value"	"80.68mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("AREA"
@@ -704,7 +659,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"81.27mW")
+                    ("value"	"80.68mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("AREA"
@@ -719,7 +674,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"81.27mW")
+                    ("value"	"80.68mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("AREA"
@@ -734,7 +689,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"81.27mW")
+                    ("value"	"80.68mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("AREA"
@@ -749,7 +704,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"81.27mW")
+                    ("value"	"80.68mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("AREA"
@@ -764,7 +719,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"81.27mW")
+                    ("value"	"80.68mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("AREA"
@@ -779,7 +734,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"325.3fW")
+                    ("value"	"38.91mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("AREA"
@@ -794,7 +749,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"325.3fW")
+                    ("value"	"38.91mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("AREA"
@@ -809,7 +764,7 @@
             ("level"	"0")
             ("model_params"
                 ("BiasValue Power"
-                    ("value"	"325.3fW")
+                    ("value"	"38.91mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("AREA"
@@ -824,12 +779,12 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"700")
+                    ("value"	"680")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"32.37e-21W")
+                    ("value"	"24.15mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"
@@ -877,12 +832,12 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"700")
+                    ("value"	"680")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"215.8uW")
+                    ("value"	"206.2uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"
@@ -930,12 +885,12 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"700")
+                    ("value"	"680")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"215.8uW")
+                    ("value"	"206.2uW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"
@@ -988,7 +943,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"42.94mW")
+                    ("value"	"42.41mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"
@@ -1041,7 +996,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"42.94mW")
+                    ("value"	"42.41mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"
@@ -1083,54 +1038,9 @@
                 ("MAX_TEMP"	"200.0")
             )
         )
-        ("VDC"
-            ("device_name"	"VDC")
-            ("pspice_path"	"V_VDC")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"5Vdc")
-                    ("pspice_param"	"DC")
-                )
-                ("BiasValue Power"
-                    ("value"	"-655.3mW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-            )
-        )
-        ("Pin-R2"
-            ("device_name"	"VDC")
-            ("pspice_path"	"V_Pin-R2")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"5Vdc")
-                    ("pspice_param"	"DC")
-                )
-                ("BiasValue Power"
-                    ("value"	"-2.776mW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-            )
-        )
-        ("Pin-R3"
-            ("device_name"	"VDC")
-            ("pspice_path"	"V_Pin-R3")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"5Vdc")
-                    ("pspice_param"	"DC")
-                )
-                ("BiasValue Power"
-                    ("value"	"-2.776mW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-            )
-        )
-        ("R1"
+        ("R-CL1"
             ("device_name"	"R")
-            ("pspice_path"	"R_R1")
+            ("pspice_path"	"R_R-CL1")
             ("level"	"0")
             ("model_params"
                 ("VALUE"
@@ -1139,7 +1049,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"1.390e-21W")
+                    ("value"	"11.77mW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"
@@ -1179,6 +1089,21 @@
                 ("POWER"	"0.25")
                 ("SLOPE"	"0.005")
                 ("MAX_TEMP"	"200.0")
+            )
+        )
+        ("Pin-R4"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_Pin-R4")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"5Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("BiasValue Power"
+                    ("value"	"-921.4mW")
+                    ("pspice_param"	"BiasValue Power")
+                )
             )
         )
     )

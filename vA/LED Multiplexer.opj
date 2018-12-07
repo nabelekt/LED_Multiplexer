@@ -34,14 +34,15 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\vA\led multiplexer.dsn")
+         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led multiplexer.dsn")
       (Path "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\vA\led multiplexer.dsn"
+         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led multiplexer.dsn"
          "SCHEMATIC1")
       (Path "Design Resources" "Library")
-      (Path "Design Resources" "Library" "..\library1.olb")
       (Path "Outputs")
-      (Select "Design Resources" "Library" "..\library1.olb"))
+      (Select "Design Resources"
+         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led multiplexer.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -49,25 +50,23 @@
         (Placement "44 0 1 -1 -1 -8 -31 0 200 0 150"))
       (Tab 0))
     (Doc
-      (Type "COrPrmBrowserDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 182 1258 182 676"))
-      (Path
-         "C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\LIBRARY1.OLB")
-      (Package "ARDUINO_PINS")
-      (PartType "1"))
-    (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 78 1474 78 507")
-        (Scroll "-42 96")
-        (Zoom "123")
+        (Placement "44 2 3 -1 -1 -8 -31 130 1526 130 559")
+        (Scroll "184 264")
+        (Zoom "200")
         (Occurrence "/"))
       (Path
-         "C:\USERS\THOMAS NABELEK\DESKTOP\LED MULTIPLEXING\LED_MULTIPLEXER\VA\LED MULTIPLEXER.DSN")
+         "C:\USERS\THOMAS NABELEK\DESKTOP\LED MULTIPLEXING\LED_MULTIPLEXER_WITH_TRANSISTORS\VA\LED MULTIPLEXER.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1")))
   (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
     (PORTRIGHT-L
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
@@ -78,9 +77,6 @@
       (FullPartName "R.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (VCC
-      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (LW_541C-TYP
       (FullPartName "LW_541C-TYP.Normal")

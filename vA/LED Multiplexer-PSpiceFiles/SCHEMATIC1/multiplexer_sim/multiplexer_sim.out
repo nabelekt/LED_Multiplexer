@@ -1,7 +1,7 @@
 
-**** 11/27/18 23:45:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/06/18 23:13:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\vA\led multiplexer-pspi
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led
 
 
  ****     CIRCUIT DESCRIPTION
@@ -37,12 +37,9 @@ Q_Q-C3         N04814 N00492 0 Q2N3904
 Q_Q-R1         N003111 N05654 N05542 Q2N3904
 Q_Q-R2         N003531 N05701 N05421 Q2N3904
 Q_Q-R3         N003831 N05750 N05419 Q2N3904
-R_R-C1         N02465 N00506  700 TC=0,0 
-R_R-C2         N01883 N00499  700 TC=0,0 
-R_R-C3         N01948 N00492  700 TC=0,0 
-V_Pin-C1         N02465 0 5Vdc
-V_Pin-C2         N01883 0 5Vdc
-V_Pin-C3         N01948 0 5Vdc
+R_R-C1         V+ N00506  680 TC=0,0 
+R_R-C2         V+ N00499  680 TC=0,0 
+R_R-C3         V+ N00492  680 TC=0,0 
 D_LED-R3C3         N05419 N04814 LW_541C-TYP 
 D_LED-R3C2         N05419 N04818 LW_541C-TYP 
 D_LED-R3C1         N05419 N04822 LW_541C-TYP 
@@ -52,22 +49,20 @@ D_LED-R2C1         N05421 N04822 LW_541C-TYP
 D_LED-R1C1         N05542 N04822 LW_541C-TYP 
 D_LED-R1C2         N05542 N04818 LW_541C-TYP 
 D_LED-R1C3         N05542 N04814 LW_541C-TYP 
-R_R-R1         N05654 0  700 TC=0,0 
-R_R-R2         N05701 N06293  700 TC=0,0 
-R_R-R3         N05750 N06354  700 TC=0,0 
-R_R-CL2         N003531 N06025  10 TC=0,0 
-R_R-CL3         N003831 N06025  10 TC=0,0 
-V_VDC         N06025 0 5Vdc
-V_Pin-R2         N06293 0 5Vdc
-V_Pin-R3         N06354 0 5Vdc
-R_R1         N003111 N06025  10 TC=0,0 
+R_R-R1         N05654 V+  680 TC=0,0 
+R_R-R2         N05701 V+  680 TC=0,0 
+R_R-R3         N05750 V+  680 TC=0,0 
+R_R-CL2         N003531 V+  10 TC=0,0 
+R_R-CL3         N003831 V+  10 TC=0,0 
+R_R-CL1         N003111 V+  10 TC=0,0 
+V_Pin-R4         V+ 0 5Vdc
 
 **** RESUMING multiplexer_sim.cir ****
 .END
 
-**** 11/27/18 23:45:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/06/18 23:13:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\vA\led multiplexer-pspi
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led
 
 
  ****     Diode MODEL PARAMETERS
@@ -84,9 +79,9 @@ R_R1         N003111 N06025  10 TC=0,0
           RS   22.499        
 
 
-**** 11/27/18 23:45:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/06/18 23:13:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\vA\led multiplexer-pspi
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led
 
 
  ****     BJT MODEL PARAMETERS
@@ -134,9 +129,9 @@ R_R1         N003111 N06025  10 TC=0,0
            D     .87         
 
 
-**** 11/27/18 23:45:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/06/18 23:13:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\vA\led multiplexer-pspi
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -149,17 +144,15 @@ R_R1         N003111 N06025  10 TC=0,0
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00492)     .8421 (N00499)     .8421 (N00506)     .8421 (N01883)    5.0000     
+(   V+)    5.0000  (N00492)     .8563 (N00499)     .8563 (N00506)     .8563     
 
-(N01948)    5.0000 (N02465)    5.0000 (N04814)     .1250 (N04818)     .1250     
+(N04814)     .1588 (N04818)     .1588 (N04822)     .1588 (N05419)    3.8362     
 
-(N04822)     .1250 (N05419)    3.8144 (N05421)    3.8144 (N05542)     .3207     
+(N05421)    3.8362 (N05542)    3.8362 (N05654)    4.6322 (N05701)    4.6322     
 
-(N05654) 4.760E-09 (N05701)    4.6113 (N05750)    4.6113 (N06025)    5.0000     
+(N05750)    4.6322 (N003111)    4.3573                   (N003531)    4.3573    
 
-(N06293)    5.0000 (N06354)    5.0000 (N003111)    5.0000                       
-
-(N003531)    4.3447                   (N003831)    4.3447                   
+(N003831)    4.3573                   
 
 
 
@@ -167,22 +160,17 @@ R_R1         N003111 N06025  10 TC=0,0
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_Pin-C1    -5.940E-03
-    V_Pin-C2    -5.940E-03
-    V_Pin-C3    -5.940E-03
-    V_VDC       -1.311E-01
-    V_Pin-R2    -5.552E-04
-    V_Pin-R3    -5.552E-04
+    V_Pin-R4    -2.127E-01
 
-    TOTAL POWER DISSIPATION   7.50E-01  WATTS
+    TOTAL POWER DISSIPATION   1.06E+00  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 11/27/18 23:45:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/06/18 23:13:29 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\vA\led multiplexer-pspi
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer_with_transistors\vA\led
 
 
  ****     JOB STATISTICS SUMMARY
