@@ -1,0 +1,111 @@
+(ExpressProject "LED Multiplexer"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "..\library1.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\led multiplexer.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\led multiplexer-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\led multiplexer-pspicefiles\schematic1\multiplexer_sim.sim"
+        (DisplayName "SCHEMATIC1-multiplexer_sim")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\led multiplexer-pspicefiles\schematic1\potentiometer_sweep.sim"
+        (DisplayName "SCHEMATIC1-Potentiometer_Sweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\led multiplexer-pspicefiles\schematic1\transistor_r_sweep.sim"
+        (DisplayName "SCHEMATIC1-transistor_r_sweep")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\led multiplexer-pspicefiles\schematic1\multiplexer_sim.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "Thomas Nabelek")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2\led multiplexer.dsn")
+      (Path "Design Resources"
+         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2\led multiplexer.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2\led multiplexer.dsn"
+         "SCHEMATIC1" "PAGE2"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 1700 0 556"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 52 1448 52 481")
+        (Scroll "-86 216")
+        (Zoom "114")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2\LED MULTIPLEXER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1180 78 507")
+        (Scroll "-42 105")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2\LED MULTIPLEXER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE2")))
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (LW_541C-TYP
+      (FullPartName "LW_541C-TYP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_5MMRADIAL.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_17.2\tools\capture\library"))

@@ -1,0 +1,64 @@
+
+**** 12/09/18 22:46:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2_v_B\led multiplexer-pspicefiles\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "multiplexer_sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LED MULTIPLEXER
+Q_Q-C1         N04822 N00506 0 Q2N3904
+Q_Q-C2         N04818 N00499 0 Q2N3904
+Q_Q-C3         N04814 N00492 0 Q2N3904
+R_R-C1         C1 N00506  {B_OHM} TC=0,0 
+R_R-C2         C2 N00499  {B_OHM} TC=0,0 
+R_R-C3         0 N00492  {B_OHM} TC=0,0 
+D_LED-R3C3         N05419 N04814 LW_541C-TYP 
+D_LED-R3C2         N05419 N04818 LW_541C-TYP 
+D_LED-R3C1         N05419 N04822 LW_541C-TYP 
+D_LED-R2C2         N05421 N04818 LW_541C-TYP 
+D_LED-R2C3         N05421 N04814 LW_541C-TYP 
+D_LED-R2C1         N05421 N04822 LW_541C-TYP 
+D_LED-R1C1         N05542 N04822 LW_541C-TYP 
+D_LED-R1C2         N05542 N04818 LW_541C-TYP 
+D_LED-R1C3         N05542 N04814 LW_541C-TYP 
+R_R-R1         N05542 R1  {CL_OHM} TC=0,0 
+R_R-R2         N05421 R2  {CL_OHM} TC=0,0 
+R_R-R3         N05419 R3  {CL_OHM} TC=0,0 
+V_Pin-R5         R1 0 5Vdc
+V_Pin-R6         R2 0 {PINS}
+V_Pin-R7         R3 0 {PINS}
+V_Pin-R9         C2 0 {PINS}
+V_Pin-R8         C1 0 5Vdc
+V_Pin-R10         0 0 {PINS}
+.PARAM  cl_ohm=47 pins=0vdc b_ohm=1k
+
+**** RESUMING multiplexer_sim.cir ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_Pin-R10. You may break the loop by adding a series resistance
+
