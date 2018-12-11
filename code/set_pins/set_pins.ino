@@ -1,11 +1,11 @@
 void setup() {
   // put your setup code here, to run once:
-char col1_cathode = 0;
-char col2_cathode = 1;
-char col3_cathode = 2;
-char row1_anode = 3;
-char row2_anode = 4;
-char row3_anode = 5;
+char col1_cathode = 2;
+char col2_cathode = 3;
+char col3_cathode = 4;
+char row1_anode = 5;
+char row2_anode = 6;
+char row3_anode = 7;
   pinMode(col1_cathode, OUTPUT);
   pinMode(col2_cathode, OUTPUT);
   pinMode(col3_cathode, OUTPUT);
@@ -13,9 +13,9 @@ char row3_anode = 5;
   pinMode(row2_anode, OUTPUT);
   pinMode(row3_anode, OUTPUT);
   // turn off all GPIO pins
-  digitalWrite(col1_cathode, LOW);
-  digitalWrite(col2_cathode, LOW);
-  digitalWrite(col3_cathode, LOW);
+  digitalWrite(col1_cathode, HIGH);
+  digitalWrite(col2_cathode, HIGH);
+  digitalWrite(col3_cathode, HIGH);
   digitalWrite(row1_anode, HIGH);
   digitalWrite(row2_anode, HIGH);
   digitalWrite(row3_anode, HIGH);

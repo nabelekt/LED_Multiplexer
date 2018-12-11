@@ -1,180 +1,111 @@
-// Code based on and heavily modified from "Transistor Multiplexing 3x3 LEDs" by Marty Peltz (https://www.instructables.com/id/Multiplexing-with-Arduino-Transistors-I-made/)
+// Code partially based on "Transistor Multiplexing 3x3 LEDs" by Marty Peltz (https://www.instructables.com/id/Multiplexing-with-Arduino-Transistors-I-made/)
 
-/**** variables ****/
-char col1_cathode = 2;
-char col2_cathode = 3;
-char col3_cathode = 4;
-char row1_anode = 5;
-char row2_anode = 6;
-char row3_anode = 7;
+#include "LED_multiplexer.h"
+#include "patterns.c"
 
-int max_light_level = 999;
+#define COL_1_CATHODE 2
+#define COL_2_CATHODE 3
+#define COL_3_CATHODE 4
+#define ROW_1_ANODE 5
+#define ROW_2_ANODE 6
+#define ROW_3_ANODE 7
+
+#define LIGHT_LEVEL_INIT 1
+#define MAX_LIGHT_LEVEL 999
+#define PATTERN_TIME_INIT 10
 
 void setup() {
-  // Set Pins to outputs
-  pinMode(col1_cathode, OUTPUT);
-  pinMode(col2_cathode, OUTPUT);
-  pinMode(col3_cathode, OUTPUT);
-  pinMode(row1_anode, OUTPUT);
-  pinMode(row2_anode, OUTPUT);
-  pinMode(row3_anode, OUTPUT);
-  // turn off all GPIO pins
-  digitalWrite(col1_cathode, HIGH);
-  digitalWrite(col2_cathode, LOW);
-  digitalWrite(col3_cathode, LOW);
-  digitalWrite(row1_anode, LOW);
-  digitalWrite(row2_anode, LOW);
-  digitalWrite(row3_anode, HIGH);
+  // Setup pins
+  pinMode(COL_1_CATHODE, OUTPUT);
+  pinMode(COL_2_CATHODE, OUTPUT);
+  pinMode(COL_3_CATHODE, OUTPUT);
+  pinMode(ROW_1_ANODE, OUTPUT);
+  pinMode(ROW_2_ANODE, OUTPUT);
+  pinMode(ROW_3_ANODE, OUTPUT);
+  digitalWrite(COL_1_CATHODE, LOW);
+  digitalWrite(COL_2_CATHODE, LOW);
+  digitalWrite(COL_3_CATHODE, LOW);
+  digitalWrite(ROW_1_ANODE, LOW);
+  digitalWrite(ROW_2_ANODE, LOW);
+  digitalWrite(ROW_3_ANODE, LOW);
 }
 
-int pattern_time = 100;
 void loop() {
-
-    // pattern_F();
-
-    // Traffic alert - pattern_time = 20
+    pattern_C();
 }
 
-void pattern_A() {
-  // Single light on around in a circle with center light lit
-  display_LED(0x01,0x02,0x00);
-  display_LED(0x02,0x02,0x00);
-  display_LED(0x04,0x02,0x00);
-  display_LED(0x00,0x06,0x00);
-  display_LED(0x00,0x02,0x04);
-  display_LED(0x00,0x02,0x02);
-  display_LED(0x00,0x02,0x01);
-  display_LED(0x00,0x03,0x00);
-}
-
-void pattern_B() {
-  // Single light off around in a circle with center light lit
-  display_LED(0x06,0x07,0x07);
-  display_LED(0x05,0x07,0x07);
-  display_LED(0x03,0x07,0x07);
-  display_LED(0x07,0x03,0x07);
-  display_LED(0x07,0x07,0x03);
-  display_LED(0x07,0x07,0x05);
-  display_LED(0x07,0x07,0x06);
-  display_LED(0x07,0x06,0x07);
-}
-
-void pattern_C() {
-  // Traffic warning signal
-  display_LED(0x02,0x05,0x02);
-  display_LED(0x05,0x02,0x05);
-}
-
-void pattern_D() {
-  // Raining
-  display_LED(0x01,0x00,0x00);
-  display_LED(0x02,0x01,0x00);
-  display_LED(0x04,0x02,0x01);
-  display_LED(0x00,0x04,0x02);
-  display_LED(0x00,0x00,0x04);
-}
-
-void pattern_E() {
-  // Inverse raining
-  display_LED(0x03,0x05,0x06);
-  display_LED(0x07,0x03,0x05);
-  display_LED(0x06,0x07,0x03);
-  display_LED(0x05,0x06,0x07);
-}
-
-void pattern_F() {
-  // Hold
-  display_LED(0x07,0x00,0x00);
-}
-
-/**** display LED function ****/
-/* Purpose: Call this function with the hexdecimal parameter you wish to display
- * Notes: This function controls the Cathode, in my case controlling the columns
- */
-void display_LED(char c1, char c2, char c3)
+void multiplex_LEDs(int col_1, int col_2, int col_3)
 {
-    int light_level = 999;
+  int light_level = LIGHT_LEVEL_INIT;
+  int pattern_time = PATTERN_TIME_INIT;
  
   for (int i = 0; i < pattern_time; i++) {
 
-      row_anode(c1);                   // Call row_anode with first hexdecimal value
-        digitalWrite(col1_cathode, HIGH);
-        delayMicroseconds(light_level);
-        digitalWrite(col1_cathode, LOW);
-        delayMicroseconds(max_light_level - light_level);
+    update_rows(col_1);
+    digitalWrite(COL_1_CATHODE, HIGH);
+    delayMicroseconds(light_level);
+    digitalWrite(COL_1_CATHODE, LOW);
+    delayMicroseconds(MAX_LIGHT_LEVEL - light_level);
 
 
-    row_anode(c2);                     // Call row_anode with second hexdecimal value
-      digitalWrite(col2_cathode, HIGH);
-      delayMicroseconds(light_level);
-      digitalWrite(col2_cathode, LOW);
-      delayMicroseconds(max_light_level - light_level);
+    update_rows(col_2);
+    digitalWrite(COL_2_CATHODE, HIGH);
+    delayMicroseconds(light_level);
+    digitalWrite(COL_2_CATHODE, LOW);
+    delayMicroseconds(MAX_LIGHT_LEVEL - light_level);
 
 
-      row_anode(c3);                     // Call row_anode with second hexdecimal value
-      digitalWrite(col3_cathode, HIGH);
-      delayMicroseconds(light_level);      
-      digitalWrite(col3_cathode, LOW);
-      delayMicroseconds(max_light_level - light_level);
-
+    update_rows(col_3);
+    digitalWrite(COL_3_CATHODE, HIGH);
+    delayMicroseconds(light_level);      
+    digitalWrite(COL_3_CATHODE, LOW);
+    delayMicroseconds(MAX_LIGHT_LEVEL - light_level);
       
   }    
 }
 
-
-/**** Cathode (columns) function ****/
-/* Purpose: Take paramater value and turn on related pins
- * Note: Due to using Arduinos digitalWrite you must set the pins,
- *        however if using DDRx/PORTx you can just apply a hexdecimal value to set the pins on a port.
- */
-void row_anode(char LEDs_on)
+void update_rows(int LED_vals)
 {
-  if(LEDs_on == 0x00)
-  {
-    digitalWrite(row1_anode, LOW); 
-    digitalWrite(row2_anode, LOW);
-    digitalWrite(row3_anode, LOW);
-  }
-  else if(LEDs_on == 0x01)
-  {
-    digitalWrite(row1_anode, HIGH); 
-    digitalWrite(row2_anode, LOW);
-    digitalWrite(row3_anode, LOW);
-  }
-  else if(LEDs_on == 0x02)
-  {
-    digitalWrite(row1_anode, LOW); 
-    digitalWrite(row2_anode, HIGH);
-    digitalWrite(row3_anode, LOW); 
-  }
-  else if(LEDs_on == 0x03)
-  {
-    digitalWrite(row1_anode, HIGH); 
-    digitalWrite(row2_anode, HIGH);
-    digitalWrite(row3_anode, LOW); 
-  }
-  else if(LEDs_on == 0x04)
-  {
-    digitalWrite(row1_anode, LOW); 
-    digitalWrite(row2_anode, LOW);
-    digitalWrite(row3_anode, HIGH); 
-  }
-  else if(LEDs_on == 0x05)
-  {
-    digitalWrite(row1_anode, HIGH); 
-    digitalWrite(row2_anode, LOW);
-    digitalWrite(row3_anode, HIGH); 
-  }
-  else if(LEDs_on == 0x06)
-  {
-    digitalWrite(row1_anode, LOW); 
-    digitalWrite(row2_anode, HIGH);
-    digitalWrite(row3_anode, HIGH); 
-  }
-  else if(LEDs_on == 0x07)
-  {
-    digitalWrite(row1_anode, HIGH); 
-    digitalWrite(row2_anode, HIGH);
-    digitalWrite(row3_anode, HIGH); 
+  switch (LED_vals) {
+    case 0x00:
+      digitalWrite(ROW_1_ANODE, LOW); 
+      digitalWrite(ROW_2_ANODE, LOW);
+      digitalWrite(ROW_3_ANODE, LOW);
+      break;
+    case 0x01:
+      digitalWrite(ROW_1_ANODE, LOW); 
+      digitalWrite(ROW_2_ANODE, LOW);
+      digitalWrite(ROW_3_ANODE, HIGH);
+      break;
+    case 0x02:
+      digitalWrite(ROW_1_ANODE, LOW); 
+      digitalWrite(ROW_2_ANODE, HIGH);
+      digitalWrite(ROW_3_ANODE, LOW); 
+      break;
+    case 0x03:
+      digitalWrite(ROW_1_ANODE, LOW); 
+      digitalWrite(ROW_2_ANODE, HIGH);
+      digitalWrite(ROW_3_ANODE, HIGH); 
+      break;
+    case 0x04:
+      digitalWrite(ROW_1_ANODE, HIGH); 
+      digitalWrite(ROW_2_ANODE, LOW);
+      digitalWrite(ROW_3_ANODE, LOW); 
+      break;
+    case 0x05:
+      digitalWrite(ROW_1_ANODE, HIGH); 
+      digitalWrite(ROW_2_ANODE, LOW);
+      digitalWrite(ROW_3_ANODE, HIGH); 
+      break;
+    case 0x06:
+      digitalWrite(ROW_1_ANODE, HIGH); 
+      digitalWrite(ROW_2_ANODE, HIGH);
+      digitalWrite(ROW_3_ANODE, LOW); 
+      break;
+    case 0x07:
+      digitalWrite(ROW_1_ANODE, HIGH); 
+      digitalWrite(ROW_2_ANODE, HIGH);
+      digitalWrite(ROW_3_ANODE, HIGH);
+      break;
   }
 }
