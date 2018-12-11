@@ -1,7 +1,7 @@
 
-**** 12/09/18 22:46:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/10/18 18:31:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2_v_B\led multiplexer-pspicefiles\
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
 
 
  ****     CIRCUIT DESCRIPTION
@@ -36,7 +36,7 @@ Q_Q-C2         N04818 N00499 0 Q2N3904
 Q_Q-C3         N04814 N00492 0 Q2N3904
 R_R-C1         C1 N00506  {B_OHM} TC=0,0 
 R_R-C2         C2 N00499  {B_OHM} TC=0,0 
-R_R-C3         0 N00492  {B_OHM} TC=0,0 
+R_R-C3         C3 N00492  {B_OHM} TC=0,0 
 D_LED-R3C3         N05419 N04814 LW_541C-TYP 
 D_LED-R3C2         N05419 N04818 LW_541C-TYP 
 D_LED-R3C1         N05419 N04822 LW_541C-TYP 
@@ -54,11 +54,11 @@ V_Pin-R6         R2 0 {PINS}
 V_Pin-R7         R3 0 {PINS}
 V_Pin-R9         C2 0 {PINS}
 V_Pin-R8         C1 0 5Vdc
-V_Pin-R10         0 0 {PINS}
-.PARAM  cl_ohm=47 pins=0vdc b_ohm=1k
+V_Pin-R10         C3 0 {PINS}
+.PARAM  cl_ohm=56 pins=ovdc b_ohm=2.2k
+-----------------------$
+ERROR(ORPSIM-16152): Invalid number: Error while converting token 'ovdc' to double value. Token can be a constant or expression
 
 **** RESUMING multiplexer_sim.cir ****
 .END
-
-ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_Pin-R10. You may break the loop by adding a series resistance
 

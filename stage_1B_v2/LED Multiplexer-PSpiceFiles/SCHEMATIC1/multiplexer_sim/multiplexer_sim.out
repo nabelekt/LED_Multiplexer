@@ -1,7 +1,7 @@
 
-**** 12/09/18 22:48:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/10/18 20:16:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2_v_B\led multiplexer-pspicefiles\
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
 
 
  ****     CIRCUIT DESCRIPTION
@@ -55,14 +55,14 @@ V_Pin-R7         R3 0 {PINS}
 V_Pin-R9         C2 0 {PINS}
 V_Pin-R8         C1 0 5Vdc
 V_Pin-R10         C3 0 {PINS}
-.PARAM  cl_ohm=47 pins=5vdc b_ohm=2.2k
+.PARAM  cl_ohm=47 pins=0vdc b_ohm=2.2k
 
 **** RESUMING multiplexer_sim.cir ****
 .END
 
-**** 12/09/18 22:48:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/10/18 20:16:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2_v_B\led multiplexer-pspicefiles\
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
 
 
  ****     Diode MODEL PARAMETERS
@@ -79,9 +79,9 @@ V_Pin-R10         C3 0 {PINS}
           RS   22.499        
 
 
-**** 12/09/18 22:48:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/10/18 20:16:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2_v_B\led multiplexer-pspicefiles\
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
 
 
  ****     BJT MODEL PARAMETERS
@@ -129,9 +129,9 @@ V_Pin-R10         C3 0 {PINS}
            D     .87         
 
 
-**** 12/09/18 22:48:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/10/18 20:16:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2_v_B\led multiplexer-pspicefiles\
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -144,13 +144,13 @@ V_Pin-R10         C3 0 {PINS}
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   C1)    5.0000  (   C2)    5.0000  (   C3)    5.0000  (   R1)    5.0000      
+(   C1)    5.0000  (   C2)    0.0000  (   C3)    0.0000  (   R1)    5.0000      
 
-(   R2)    5.0000  (   R3)    5.0000  (N00492)     .7876 (N00499)     .7876     
+(   R2)    0.0000  (   R3)    0.0000  (N00492) 10.14E-09 (N00499) 10.14E-09     
 
-(N00506)     .7876 (N04814)     .1302 (N04818)     .1302 (N04822)     .1302     
+(N00506)     .7787 (N04814)    3.3922 (N04818)    3.3922 (N04822)     .1120     
 
-(N05419)    3.4752 (N05421)    3.4752 (N05542)    3.4752 
+(N05419) 374.4E-12 (N05421) 374.4E-12 (N05542)    3.8624 
 
 
 
@@ -158,22 +158,22 @@ V_Pin-R10         C3 0 {PINS}
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_Pin-R5    -3.244E-02
-    V_Pin-R6    -3.244E-02
-    V_Pin-R7    -3.244E-02
-    V_Pin-R9    -1.915E-03
-    V_Pin-R8    -1.915E-03
-    V_Pin-R10   -1.915E-03
+    V_Pin-R5    -2.420E-02
+    V_Pin-R6     7.965E-12
+    V_Pin-R7     7.965E-12
+    V_Pin-R9     4.611E-12
+    V_Pin-R8    -1.919E-03
+    V_Pin-R10    4.611E-12
 
-    TOTAL POWER DISSIPATION   5.15E-01  WATTS
+    TOTAL POWER DISSIPATION   1.31E-01  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 12/09/18 22:48:15 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/10/18 20:16:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2_v_B\led multiplexer-pspicefiles\
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
 
 
  ****     JOB STATISTICS SUMMARY
@@ -183,5 +183,5 @@ V_Pin-R10         C3 0 {PINS}
 
 
 
-  Total job time (using Solver 1)   =         .08
+  Total job time (using Solver 1)   =         .06
 

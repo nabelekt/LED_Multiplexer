@@ -42,9 +42,9 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2_v_B\led multiplexer.dsn")
+         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer.dsn")
       (Path "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2_v_B\led multiplexer.dsn"
+         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer.dsn"
          "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "PSpice Resources")
@@ -53,17 +53,17 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 1700 0 556"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 1700 0 556"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1448 52 481")
-        (Scroll "0 305")
+        (Placement "44 0 1 -1 -1 -8 -31 52 1444 52 477")
+        (Scroll "-12 295")
         (Zoom "136")
         (Occurrence "/"))
       (Path
-         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2_V_B\LED MULTIPLEXER.DSN")
+         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_1B_V2\LED MULTIPLEXER.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1")))
   (PartMRUSelector
