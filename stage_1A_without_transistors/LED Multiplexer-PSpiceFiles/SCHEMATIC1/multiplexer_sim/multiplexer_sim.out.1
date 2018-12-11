@@ -1,0 +1,69 @@
+
+**** 11/27/18 23:44:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED Multiplexing\LED_Multiplexer\vA\led multiplexer-pspi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "multiplexer_sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LED MULTIPLEXER
+Q_Q-C1         N04822 N00506 0 Q2N3904
+Q_Q-C2         N04818 N00499 0 Q2N3904
+Q_Q-C3         N04814 N00492 0 Q2N3904
+Q_Q-R1         N003111 N05654 N05542 Q2N3904
+Q_Q-R2         N003531 N05701 N05421 Q2N3904
+Q_Q-R3         N003831 N05750 N05419 Q2N3904
+R_R-C1         N02465 N00506  700 TC=0,0 
+R_R-C2         N01883 N00499  700 TC=0,0 
+R_R-C3         N01948 N00492  700 TC=0,0 
+V_Pin-C1         N02465 0 5Vdc
+V_Pin-C2         N01883 0 5Vdc
+V_Pin-C3         N01948 0 5Vdc
+D_LED-R3C3         N05419 N04814 LW_541C-TYP 
+D_LED-R3C2         N05419 N04818 LW_541C-TYP 
+D_LED-R3C1         N05419 N04822 LW_541C-TYP 
+D_LED-R2C2         N05421 N04818 LW_541C-TYP 
+D_LED-R2C3         N05421 N04814 LW_541C-TYP 
+D_LED-R2C1         N05421 N04822 LW_541C-TYP 
+D_LED-R1C1         N05542 N04822 LW_541C-TYP 
+D_LED-R1C2         N05542 N04818 LW_541C-TYP 
+D_LED-R1C3         N05542 N04814 LW_541C-TYP 
+R_R-R1         N05654 VCC_BAR  700 TC=0,0 
+R_R-R2         N05701 N06293  700 TC=0,0 
+R_R-R3         N05750 N06354  700 TC=0,0 
+R_R-CL2         N003531 N06025  10 TC=0,0 
+R_R-CL3         N003831 N06025  10 TC=0,0 
+V_VDC         N06025 0 5Vdc
+V_Pin-R2         N06293 0 5Vdc
+V_Pin-R3         N06354 0 5Vdc
+R_R1         N003111 N06025  10 TC=0,0 
+
+**** RESUMING multiplexer_sim.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node VCC_BAR.
+
