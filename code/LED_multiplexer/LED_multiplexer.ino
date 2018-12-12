@@ -14,6 +14,8 @@
 #define MAX_LIGHT_LEVEL 999
 #define PATTERN_TIME_INIT 10
 
+#define NUM_PATTERNS 7
+
 void setup() {
   // Setup pins
   pinMode(COL_1_CATHODE, OUTPUT);
@@ -28,10 +30,17 @@ void setup() {
   digitalWrite(ROW_1_ANODE, LOW);
   digitalWrite(ROW_2_ANODE, LOW);
   digitalWrite(ROW_3_ANODE, LOW);
+
+  // Setup pattern function pointers
+  void (*patterns[NUM_PATTERNS])(void) = 
+    {&pattern_A, &pattern_B, &pattern_C, &pattern_D, &pattern_E, &pattern_F, &pattern_G};
 }
 
 void loop() {
-    pattern_C();
+  // Loop through patterns running each pattern 5 times in a row
+  for (int pattern_ind = 0; pattern_ind < NUM_PATTERNS; pattern_ind++)
+    for (int count = 0; count < 5; count++)
+      patterns[pattern_ind];  // Run selected pattern
 }
 
 void multiplex_LEDs(int col_1, int col_2, int col_3)
