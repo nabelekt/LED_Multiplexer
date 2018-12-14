@@ -1,4 +1,7 @@
 #pragma once // Prevent cyclic inclusion
+#include <stdbool.h>
+
+bool button_pushed = false;
 
 void multiplex_LEDs(int, int, int);
 void update_rows(int);
@@ -11,4 +14,4 @@ void pattern_E();
 void pattern_F();
 void pattern_G();
 
-void (*patterns[7]) (void);
+// void (*patterns[7]) (void);

@@ -1,5 +1,7 @@
 #include "LED_multiplexer.h"
 
+extern bool button_pushed;
+
 void pattern_A() {
   // Single light on around in a circle CW with center light lit
   multiplex_LEDs(0b001, 0b010, 0b000);
@@ -10,6 +12,7 @@ void pattern_A() {
   multiplex_LEDs(0b000, 0b010, 0b010);
   multiplex_LEDs(0b000, 0b010, 0b001);
   multiplex_LEDs(0b000, 0b011, 0b000);
+  button_pushed = false;
 }
 
 void pattern_B() {
@@ -22,6 +25,7 @@ void pattern_B() {
   multiplex_LEDs(0b000, 0b110, 0b000);
   multiplex_LEDs(0b100, 0b010, 0b000);
   multiplex_LEDs(0b010, 0b010, 0b000);
+  button_pushed = false;
 }
 
 void pattern_C() {
@@ -34,6 +38,7 @@ void pattern_C() {
   multiplex_LEDs(0b111, 0b111, 0b101);
   multiplex_LEDs(0b111, 0b111, 0b110);
   multiplex_LEDs(0b111, 0b110, 0b111);
+  button_pushed = false;
 }
 
 void pattern_D() {

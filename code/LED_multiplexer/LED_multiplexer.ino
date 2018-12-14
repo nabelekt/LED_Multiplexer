@@ -2,6 +2,7 @@
 
 #include "LED_multiplexer.h"
 #include "patterns.c"
+// #include <Serial.h>
 
 #define COL_1_CATHODE 2
 #define COL_2_CATHODE 3
@@ -9,15 +10,24 @@
 #define ROW_1_ANODE 5
 #define ROW_2_ANODE 6
 #define ROW_3_ANODE 7
+#define BUTTON_PIN 8
 
-#define LIGHT_LEVEL_INIT 1
+#define LIGHT_LEVEL_INIT 100
 #define MAX_LIGHT_LEVEL 999
-#define PATTERN_TIME_INIT 10
+#define PATTERN_TIME_INIT 20
 
 #define NUM_PATTERNS 7
 
+// Setup pattern function pointers
+void (*patterns[NUM_PATTERNS])(void) = 
+  {&pattern_A, &pattern_B, &pattern_C, &pattern_D, &pattern_E, &pattern_F, &pattern_G};
+
+int pattern_ind = 0;
+
 void setup() {
-  // Setup pins
+  Serial.begin(9600);
+
+  // Setup LED/transistor pins
   pinMode(COL_1_CATHODE, OUTPUT);
   pinMode(COL_2_CATHODE, OUTPUT);
   pinMode(COL_3_CATHODE, OUTPUT);
@@ -31,16 +41,12 @@ void setup() {
   digitalWrite(ROW_2_ANODE, LOW);
   digitalWrite(ROW_3_ANODE, LOW);
 
-  // Setup pattern function pointers
-  void (*patterns[NUM_PATTERNS])(void) = 
-    {&pattern_A, &pattern_B, &pattern_C, &pattern_D, &pattern_E, &pattern_F, &pattern_G};
+  // Setup other pins
+  digitalWrite(BUTTON_PIN, INPUT);
 }
 
 void loop() {
-  // Loop through patterns running each pattern 5 times in a row
-  for (int pattern_ind = 0; pattern_ind < NUM_PATTERNS; pattern_ind++)
-    for (int count = 0; count < 5; count++)
-      patterns[pattern_ind];  // Run selected pattern
+  patterns[pattern_ind]();  // Run selected pattern
 }
 
 void multiplex_LEDs(int col_1, int col_2, int col_3)
@@ -75,6 +81,10 @@ void multiplex_LEDs(int col_1, int col_2, int col_3)
 
 void update_rows(int LED_vals)
 {
+  button_pushed = check_button();
+  if (button_pushed)  // Return right away if button was pushed.
+    return;
+
   switch (LED_vals) {
     case 0x00:
       digitalWrite(ROW_1_ANODE, LOW); 
@@ -117,4 +127,15 @@ void update_rows(int LED_vals)
       digitalWrite(ROW_3_ANODE, HIGH);
       break;
   }
+}
+
+bool check_button() {
+  if (digitalRead(BUTTON_PIN)) { // If button is pushed
+    pattern_ind++;
+    if (pattern_ind >= NUM_PATTERNS)
+      pattern_ind = 0;
+    delay(250); // Ignore button push within same 1/4 second
+    return true;
+  }
+  return false; // If button is not pushed
 }
