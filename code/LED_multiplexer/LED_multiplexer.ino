@@ -58,37 +58,35 @@ void multiplex_LEDs(int col_1, int col_2, int col_3)
   int pattern_time = PATTERN_TIME_INIT;
  
   for (int i = 0; i < pattern_time; i++) {
-
-    update_rows(col_1);
+    if (update_rows(col_1))
+      return;
     digitalWrite(COL_1_CATHODE, HIGH);
     delayMicroseconds(light_level);
     digitalWrite(COL_1_CATHODE, LOW);
     delayMicroseconds(MAX_LIGHT_LEVEL - light_level);
 
-
-    update_rows(col_2);
+    if (update_rows(col_2))
+      return;
     digitalWrite(COL_2_CATHODE, HIGH);
     delayMicroseconds(light_level);
     digitalWrite(COL_2_CATHODE, LOW);
     delayMicroseconds(MAX_LIGHT_LEVEL - light_level);
 
-
-    update_rows(col_3);
+    if (update_rows(col_3))
+      return;
     digitalWrite(COL_3_CATHODE, HIGH);
     delayMicroseconds(light_level);      
     digitalWrite(COL_3_CATHODE, LOW);
     delayMicroseconds(MAX_LIGHT_LEVEL - light_level);
-      
   }    
 }
 
-void update_rows(int LED_vals)
+bool update_rows(int LED_vals)
 {
-  
   if (!button_pushed)
     check_button();
   if (button_pushed)  // Return right away if button was pushed.
-    return;
+    return true;
 
   switch (LED_vals) {
     case 0x00:
@@ -132,14 +130,21 @@ void update_rows(int LED_vals)
       digitalWrite(ROW_3_ANODE, HIGH);
       break;
   }
+
+  return false;
 }
 
 void check_button() {
   if (digitalRead(BUTTON_PIN)) { // If button is pushed
+    // Turn all lights off while handling button press
+    digitalWrite(ROW_1_ANODE, LOW); 
+    digitalWrite(ROW_2_ANODE, LOW);
+    digitalWrite(ROW_3_ANODE, LOW);
+
     button_pushed = true;
     pattern_ind++;
     if (pattern_ind >= NUM_PATTERNS)
       pattern_ind = 0;
-    delay(100); // Ignore button push within same 1/10 second
+    delay(200); // Ignore button push within same 1/10 second
   }
 }

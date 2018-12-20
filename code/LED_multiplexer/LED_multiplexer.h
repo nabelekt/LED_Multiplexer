@@ -4,7 +4,7 @@
 bool button_pushed;
 
 void multiplex_LEDs(int, int, int);
-void update_rows(int);
+bool update_rows(int);
 
 void pattern_A();
 void pattern_B();
