@@ -43,10 +43,13 @@ void setup() {
 
   // Setup other pins
   digitalWrite(BUTTON_PIN, INPUT);
+
+  button_pushed = false;
 }
 
 void loop() {
   patterns[pattern_ind]();  // Run selected pattern
+  Serial.println(pattern_ind);
 }
 
 void multiplex_LEDs(int col_1, int col_2, int col_3)
@@ -81,7 +84,9 @@ void multiplex_LEDs(int col_1, int col_2, int col_3)
 
 void update_rows(int LED_vals)
 {
-  button_pushed = check_button();
+  
+  if (!button_pushed)
+    check_button();
   if (button_pushed)  // Return right away if button was pushed.
     return;
 
@@ -129,13 +134,12 @@ void update_rows(int LED_vals)
   }
 }
 
-bool check_button() {
+void check_button() {
   if (digitalRead(BUTTON_PIN)) { // If button is pushed
+    button_pushed = true;
     pattern_ind++;
     if (pattern_ind >= NUM_PATTERNS)
       pattern_ind = 0;
-    delay(250); // Ignore button push within same 1/4 second
-    return true;
+    delay(100); // Ignore button push within same 1/10 second
   }
-  return false; // If button is not pushed
 }
