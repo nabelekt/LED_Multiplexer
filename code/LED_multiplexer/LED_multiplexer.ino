@@ -23,6 +23,7 @@ void (*patterns[NUM_PATTERNS])(void) =
   {&pattern_A, &pattern_B, &pattern_C, &pattern_D, &pattern_E, &pattern_F, &pattern_G};
 
 int pattern_ind = 0;
+int light_level = LIGHT_LEVEL_INIT;
 
 void setup() {
   Serial.begin(9600);
@@ -136,15 +137,18 @@ bool update_rows(int LED_vals)
 
 void check_button() {
   if (digitalRead(BUTTON_PIN)) { // If button is pushed
-    // Turn all lights off while handling button press
-    digitalWrite(ROW_1_ANODE, LOW); 
-    digitalWrite(ROW_2_ANODE, LOW);
+    // Turn all lights off except center light while handling button press
+    digitalWrite(ROW_1_ANODE, LOW);
+    digitalWrite(ROW_2_ANODE, HIGH);
+    digitalWrite(COL_2_CATHODE, HIGH);
     digitalWrite(ROW_3_ANODE, LOW);
 
-    button_pushed = true;
-    pattern_ind++;
-    if (pattern_ind >= NUM_PATTERNS)
-      pattern_ind = 0;
-    delay(200); // Ignore button push within same 1/10 second
+    if (!button_pushed) {
+      pattern_ind++;
+      if (pattern_ind >= NUM_PATTERNS)
+        pattern_ind = 0;
+      button_pushed = true;
+    }
+    delay(200); // Ignore button push within same 1/5 second
   }
 }
