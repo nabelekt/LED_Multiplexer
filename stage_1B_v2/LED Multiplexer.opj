@@ -48,24 +48,16 @@
          "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles"))
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 0 1700 0 556"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1444 52 477")
-        (Scroll "-12 295")
-        (Zoom "136")
-        (Occurrence "/"))
-      (Path
-         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_1B_V2\LED MULTIPLEXER.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1")))
+      (Tab 0)))
   (PartMRUSelector
     (PARAM
       (FullPartName "PARAM.Normal")
