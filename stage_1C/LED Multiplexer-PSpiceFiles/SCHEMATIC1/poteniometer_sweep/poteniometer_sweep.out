@@ -1,0 +1,150 @@
+
+**** 12/07/18 12:05:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-poteniometer_sweep"  [ \\aerobus3\Users6$\tnabelek\My Documents\Development Projects\LED_Multiplexer\stage_2
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "poteniometer_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\tnabelek\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM OHM 1 1000 5 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LED MULTIPLEXER
+Q_Q-C1         N04822 N00506 0 Q2N3904
+Q_Q-C2         N04818 N00499 0 Q2N3904
+Q_Q-C3         N04814 N00492 0 Q2N3904
+Q_Q-R1         N003111 N05654 N05542 Q2N3904
+Q_Q-R2         N003531 N05701 N05421 Q2N3904
+Q_Q-R3         N003831 N05750 N05419 Q2N3904
+R_R-C1         V+ N00506  680 TC=0,0 
+R_R-C2         V+ N00499  680 TC=0,0 
+R_R-C3         V+ N00492  680 TC=0,0 
+D_LED-R3C3         N05419 N04814 LW_541C-TYP 
+D_LED-R3C2         N05419 N04818 LW_541C-TYP 
+D_LED-R3C1         N05419 N04822 LW_541C-TYP 
+D_LED-R2C2         N05421 N04818 LW_541C-TYP 
+D_LED-R2C3         N05421 N04814 LW_541C-TYP 
+D_LED-R2C1         N05421 N04822 LW_541C-TYP 
+D_LED-R1C1         N05542 N04822 LW_541C-TYP 
+D_LED-R1C2         N05542 N04818 LW_541C-TYP 
+D_LED-R1C3         N05542 N04814 LW_541C-TYP 
+R_R-R1         N05654 V+  680 TC=0,0 
+R_R-R2         N05701 V+  680 TC=0,0 
+R_R-R3         N05750 V+  680 TC=0,0 
+R_R-CL2         N003531 N06025  10 TC=0,0 
+R_R-CL3         N003831 N06025  10 TC=0,0 
+R_R-CL1         N003111 N06025  10 TC=0,0 
+V_Pin-R4         V+ 0 5Vdc
+R_Potentiometer         V+ N06025  {OHM} TC=0,0 
+.PARAM  ohm=1
+
+**** RESUMING poteniometer_sweep.cir ****
+.END
+
+**** 12/07/18 12:05:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-poteniometer_sweep"  [ \\aerobus3\Users6$\tnabelek\My Documents\Development Projects\LED_Multiplexer\stage_2
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               LW_541C-TYP     
+          IS  414.480000E-15 
+           N    5            
+          RS   22.499        
+
+
+**** 12/07/18 12:05:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-poteniometer_sweep"  [ \\aerobus3\Users6$\tnabelek\My Documents\Development Projects\LED_Multiplexer\stage_2
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N3904         
+               NPN             
+       LEVEL    1            
+          IS    6.734000E-15 
+          BF  416.4          
+          NF    1            
+         VAF   74.03         
+         IKF     .06678      
+         ISE    6.734000E-15 
+          NE    1.259        
+          BR     .7371       
+          NR    1            
+         ISS    0            
+          RB   10            
+          RE    0            
+          RC    1            
+         CJE    4.493000E-12 
+         VJE     .75         
+         MJE     .2593       
+         CJC    3.638000E-12 
+         VJC     .75         
+         MJC     .3085       
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  301.200000E-12 
+         XTF    2            
+         VTF    4            
+         ITF     .4          
+          TR  239.500000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+**** 12/07/18 12:05:11 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-poteniometer_sweep"  [ \\aerobus3\Users6$\tnabelek\My Documents\Development Projects\LED_Multiplexer\stage_2
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .70
+
