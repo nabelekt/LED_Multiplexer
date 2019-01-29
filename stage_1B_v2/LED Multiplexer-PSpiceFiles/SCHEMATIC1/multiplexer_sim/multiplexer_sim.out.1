@@ -1,5 +1,5 @@
-
-**** 12/10/18 18:31:55 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+**** 01/21/19 23:29:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
 
@@ -49,15 +49,15 @@ D_LED-R1C3         N05542 N04814 LW_541C-TYP
 R_R-R1         N05542 R1  {CL_OHM} TC=0,0 
 R_R-R2         N05421 R2  {CL_OHM} TC=0,0 
 R_R-R3         N05419 R3  {CL_OHM} TC=0,0 
-V_Pin-R5         R1 0 5Vdc
+V_Pin-R5         R1 0 {PINS}
 V_Pin-R6         R2 0 {PINS}
 V_Pin-R7         R3 0 {PINS}
 V_Pin-R9         C2 0 {PINS}
-V_Pin-R8         C1 0 5Vdc
+V_Pin-R8         C1 0 {PINS}
 V_Pin-R10         C3 0 {PINS}
-.PARAM  cl_ohm=56 pins=ovdc b_ohm=2.2k
------------------------$
-ERROR(ORPSIM-16152): Invalid number: Error while converting token 'ovdc' to double value. Token can be a constant or expression
+.PARAM  cl_ohm=sweep_var pins=5vdc b_ohm=2.2k
+---------------$
+ERROR(ORPSIM-16152): Invalid number: Error while converting token 'sweep_var' to double value. Token can be a constant or expression
 
 **** RESUMING multiplexer_sim.cir ****
 .END

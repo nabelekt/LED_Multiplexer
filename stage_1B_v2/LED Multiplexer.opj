@@ -30,12 +30,9 @@
         (Type "PSpice Profile"))
       (ActiveProfile
          ".\led multiplexer-pspicefiles\schematic1\multiplexer_sim.sim"))
-    (Folder "Model Libraries"
-      (Sort User))
-    (Folder "Stimulus Files"
-      (Sort User))
-    (Folder "Include Files"
-      (Sort User)))
+    (Folder "Model Libraries")
+    (Folder "Stimulus Files")
+    (Folder "Include Files"))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (MPSSessionName "Thomas Nabelek")
   (GlobalState
@@ -56,8 +53,19 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 1700 0 556"))
-      (Tab 0)))
+        (Placement "44 0 1 -1 -1 -8 -31 0 1700 0 556"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 104 1500 104 533")
+        (Scroll "-301 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_1B_V2\LED MULTIPLEXER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
   (PartMRUSelector
     (PARAM
       (FullPartName "PARAM.Normal")
