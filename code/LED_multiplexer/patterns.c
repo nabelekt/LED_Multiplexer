@@ -77,3 +77,33 @@ void pattern_G() {
   multiplex_LEDs(0b101, 0b110, 0b111);
   button_pushed = false;
 }
+
+void pattern_H() {
+  // Moving arrow
+  multiplex_LEDs(0b010, 0b000, 0b000);
+  multiplex_LEDs(0b111, 0b010, 0b000);
+  multiplex_LEDs(0b010, 0b111, 0b010);
+  multiplex_LEDs(0b010, 0b010, 0b111);
+  multiplex_LEDs(0b000, 0b010, 0b010);
+  multiplex_LEDs(0b000, 0b000, 0b010);
+  multiplex_LEDs(0b000, 0b000, 0b000);
+  button_pushed = false;
+}
+
+void pattern_I() {
+  // Enable all LEDs together
+  multiplex_LEDs(0b111, 0b111, 0b111);
+  button_pushed = false;
+}
+
+void pattern_J() {
+  // Single LED
+  multiplex_LEDs(0b001, 0b000, 0b000);
+  button_pushed = false;
+}
+
+void pattern_K() {
+  // Single LED
+  multiplex_LEDs(0b111, 0b000, 0b000);
+  button_pushed = false;
+}
