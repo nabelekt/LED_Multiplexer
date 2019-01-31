@@ -52,29 +52,52 @@
          "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles"))
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 1700 0 556"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 1700 0 556"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1448 52 481")
-        (Scroll "-208 76")
-        (Zoom "96")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1448 52 481")
+        (Scroll "-139 127")
+        (Zoom "103")
         (Occurrence "/"))
       (Path
          "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_1C\LED MULTIPLEXER.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1")))
   (PartMRUSelector
+    (SW-SPST-NO-4
+      (FullPartName "SW-SPST-NO-4.Normal")
+      (LibraryName
+         "C:\USERS\THOMAS NABELEK\DOWNLOADS\SWITCH_TE CONNECTIVITY_4-1437565-1.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (POT
+      (FullPartName "POT.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
     (Res_TT_Electronics_P120PK-Y25BR
       (FullPartName "Res_TT_Electronics_P120PK-Y25BR10K_eec.Normal")
-      (LibraryName
-         "C:\USERS\THOMAS NABELEK\DOWNLOADS\RES_TT ELECTRONICS_P120PK-Y25BR10K.OLB")
+      (LibraryName "C:\USERS\THOMAS NABELEK\DOWNLOADS\POTENTIOMETER.OLB")
       (DeviceIndex "0"))
     (PARAM
       (FullPartName "PARAM.Normal")
@@ -84,24 +107,11 @@
     (0
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
-    (VDC
-      (FullPartName "VDC.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
     (VCC
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (PORTRIGHT-L
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (VCC_BAR
-      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (LW_541C-TYP
       (FullPartName "LW_541C-TYP.Normal")
