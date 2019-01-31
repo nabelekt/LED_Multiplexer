@@ -1,7 +1,7 @@
 
-**** 01/28/19 20:32:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 01/28/19 20:09:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
+ ** Profile: "SCHEMATIC1-CL_OHM-sweep"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\LED Multiplexer-PSpiceFiles\SCH
 
 
  ****     CIRCUIT DESCRIPTION
@@ -12,7 +12,7 @@
 
 
 
-** Creating circuit file "multiplexer_sim.cir" 
+** Creating circuit file "CL_OHM-sweep.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -22,7 +22,7 @@
 .lib "nomd.lib" 
 
 *Analysis directives: 
-.TRAN  0 1000ns 0 
+.DC LIN PARAM CL_OHM 40 70 1 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
@@ -50,19 +50,19 @@ R_R-R1         N05542 R1  {CL_OHM} TC=0,0
 R_R-R2         N05421 R2  {CL_OHM} TC=0,0 
 R_R-R3         N05419 R3  {CL_OHM} TC=0,0 
 V_Pin-R5         R1 0 {PINS}
-V_Pin-R6         R2 0 {PINS}
-V_Pin-R7         R3 0 {PINS}
-V_Pin-R9         C2 0 {PINS}
-V_Pin-R8         C1 0 {PINS}
+V_Pin-R6         R2 0 0
+V_Pin-R7         R3 0 0
+V_Pin-R9         C2 0 0
+V_Pin-R8         C1 0 0
 V_Pin-R10         C3 0 {PINS}
 .PARAM  cl_ohm=47 pins=5vdc b_ohm=2.2k
 
-**** RESUMING multiplexer_sim.cir ****
+**** RESUMING CL_OHM-sweep.cir ****
 .END
 
-**** 01/28/19 20:32:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 01/28/19 20:09:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
+ ** Profile: "SCHEMATIC1-CL_OHM-sweep"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\LED Multiplexer-PSpiceFiles\SCH
 
 
  ****     Diode MODEL PARAMETERS
@@ -79,9 +79,9 @@ V_Pin-R10         C3 0 {PINS}
           RS   22.499        
 
 
-**** 01/28/19 20:32:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 01/28/19 20:09:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
+ ** Profile: "SCHEMATIC1-CL_OHM-sweep"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\LED Multiplexer-PSpiceFiles\SCH
 
 
  ****     BJT MODEL PARAMETERS
@@ -128,52 +128,13 @@ V_Pin-R10         C3 0 {PINS}
           CN    2.42         
            D     .87         
 
-
-**** 01/28/19 20:32:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
-
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
-
-
- ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
-
-
-******************************************************************************
-
-
-
- NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
-
-
-(   C1)    5.0000  (   C2)    5.0000  (   C3)    5.0000  (   R1)    5.0000      
-
-(   R2)    5.0000  (   R3)    5.0000  (N00492)     .7876 (N00499)     .7876     
-
-(N00506)     .7876 (N04814)     .1302 (N04818)     .1302 (N04822)     .1302     
-
-(N05419)    3.4752 (N05421)    3.4752 (N05542)    3.4752 
-
-
-
-
-    VOLTAGE SOURCE CURRENTS
-    NAME         CURRENT
-
-    V_Pin-R5    -3.244E-02
-    V_Pin-R6    -3.244E-02
-    V_Pin-R7    -3.244E-02
-    V_Pin-R9    -1.915E-03
-    V_Pin-R8    -1.915E-03
-    V_Pin-R10   -1.915E-03
-
-    TOTAL POWER DISSIPATION   5.15E-01  WATTS
-
 
 
           JOB CONCLUDED
 
-**** 01/28/19 20:32:28 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 01/28/19 20:09:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "SCHEMATIC1-multiplexer_sim"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer-pspicefiles\
+ ** Profile: "SCHEMATIC1-CL_OHM-sweep"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\LED Multiplexer-PSpiceFiles\SCH
 
 
  ****     JOB STATISTICS SUMMARY

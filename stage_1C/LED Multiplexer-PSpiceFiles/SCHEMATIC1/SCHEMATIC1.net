@@ -17,10 +17,10 @@ D_LED-R1C3         N05542 N04814 LW_541C-TYP
 R_R-R1         N05542 R1  {CL_OHM} TC=0,0 
 R_R-R2         N05421 R2  {CL_OHM} TC=0,0 
 R_R-R3         N05419 R3  {CL_OHM} TC=0,0 
-V_Pin-R5         R1 0 5Vdc
+V_Pin-R5         R1 0 {PINS}
 V_Pin-R6         R2 0 {PINS}
 V_Pin-R7         R3 0 {PINS}
 V_Pin-R9         C2 0 {PINS}
-V_Pin-R8         C1 0 5Vdc
+V_Pin-R8         C1 0 {PINS}
 V_Pin-R10         C3 0 {PINS}
-.PARAM  cl_ohm=47 pins=0vdc b_ohm=2.2k
+.PARAM  cl_ohm=47 pins=5vdc b_ohm=2.2k

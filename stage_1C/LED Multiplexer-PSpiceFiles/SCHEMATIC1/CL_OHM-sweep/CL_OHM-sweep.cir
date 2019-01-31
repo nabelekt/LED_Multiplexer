@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-CL_OHM-sweep"  [ C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\LED Multiplexer-PSpiceFiles\SCHEMATIC1\CL_OHM-sweep.sim ] 
+
+** Creating circuit file "CL_OHM-sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM CL_OHM 40 70 1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

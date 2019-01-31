@@ -28,6 +28,10 @@
          ".\led multiplexer-pspicefiles\schematic1\transistor_r_sweep.sim"
         (DisplayName "SCHEMATIC1-transistor_r_sweep")
         (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\led multiplexer-pspicefiles\schematic1\cl_ohm-sweep.sim"
+        (DisplayName "SCHEMATIC1-CL_OHM-sweep")
+        (Type "PSpice Profile"))
       (ActiveProfile
          ".\led multiplexer-pspicefiles\schematic1\multiplexer_sim.sim"))
     (Folder "Model Libraries"
@@ -42,23 +46,36 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer.dsn")
+         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1C\led multiplexer.dsn")
       (Path "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer.dsn"
+         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1C\led multiplexer.dsn"
          "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles")
-      (Select "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer.dsn"
-         "SCHEMATIC1" "PAGE1"))
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 0 1700 0 556"))
-      (Tab 0)))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1448 52 481")
+        (Scroll "-208 76")
+        (Zoom "96")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_1C\LED MULTIPLEXER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
   (PartMRUSelector
+    (Res_TT_Electronics_P120PK-Y25BR
+      (FullPartName "Res_TT_Electronics_P120PK-Y25BR10K_eec.Normal")
+      (LibraryName
+         "C:\USERS\THOMAS NABELEK\DOWNLOADS\RES_TT ELECTRONICS_P120PK-Y25BR10K.OLB")
+      (DeviceIndex "0"))
     (PARAM
       (FullPartName "PARAM.Normal")
       (LibraryName
@@ -91,4 +108,4 @@
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_5MMRADIAL.OLB")
       (DeviceIndex "0")))
-  (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_17.2\tools\capture\library"))
+  (LastUsedLibraryBrowseDirectory "C:\Users\Thomas Nabelek\Downloads"))
