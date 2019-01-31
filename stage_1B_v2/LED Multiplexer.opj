@@ -28,11 +28,18 @@
          ".\led multiplexer-pspicefiles\schematic1\transistor_r_sweep.sim"
         (DisplayName "SCHEMATIC1-transistor_r_sweep")
         (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\led multiplexer-pspicefiles\schematic1\cl_ohm-sweep.sim"
+        (DisplayName "SCHEMATIC1-CL_OHM-sweep")
+        (Type "PSpice Profile"))
       (ActiveProfile
          ".\led multiplexer-pspicefiles\schematic1\multiplexer_sim.sim"))
-    (Folder "Model Libraries")
-    (Folder "Stimulus Files")
-    (Folder "Include Files"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (MPSSessionName "Thomas Nabelek")
   (GlobalState
@@ -45,10 +52,7 @@
          "SCHEMATIC1")
       (Path "Design Resources" "Library")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles")
-      (Select "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1B_v2\led multiplexer.dsn"
-         "SCHEMATIC1" "PAGE1"))
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -59,8 +63,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 104 1500 104 533")
-        (Scroll "-301 0")
-        (Zoom "100")
+        (Scroll "-92 330")
+        (Zoom "143")
         (Occurrence "/"))
       (Path
          "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_1B_V2\LED MULTIPLEXER.DSN")
