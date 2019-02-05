@@ -18,19 +18,19 @@
 #define MAX_BRIGHTNESS 1000
 #define PATTERN_TIME_INIT 20
 
-#define NUM_PATTERNS 11
+#define NUM_PATTERNS 8
 
 // Setup pattern function pointers
 void (*patterns[NUM_PATTERNS])(void) = 
-  {&pattern_I, &pattern_J, &pattern_A, &pattern_B, &pattern_C, &pattern_D, &pattern_E,
-   &pattern_F, &pattern_G, &pattern_H, &pattern_I};
+  {&pattern_A, &pattern_B, &pattern_C, &pattern_D, &pattern_E,
+   &pattern_F, &pattern_G, &pattern_H};
 
 int pattern_ind = 0;
 int brightness = LIGHT_LEVEL_INIT;
 int pattern_time = PATTERN_TIME_INIT;
 
 void setup() {
-  Serial.begin(9600);
+  // Serial.begin(9600);
 
   // Setup LED/transistor pins digital write pins
   pinMode(COL_1_CATHODE, OUTPUT);

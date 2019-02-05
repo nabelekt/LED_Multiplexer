@@ -89,21 +89,3 @@ void pattern_H() {
   multiplex_LEDs(0b000, 0b000, 0b000);
   button_pushed = false;
 }
-
-void pattern_I() {
-  // Enable all LEDs together
-  multiplex_LEDs(0b111, 0b111, 0b111);
-  button_pushed = false;
-}
-
-void pattern_J() {
-  // Single LED
-  multiplex_LEDs(0b001, 0b000, 0b000);
-  button_pushed = false;
-}
-
-void pattern_K() {
-  // Single LED
-  multiplex_LEDs(0b111, 0b000, 0b000);
-  button_pushed = false;
-}
