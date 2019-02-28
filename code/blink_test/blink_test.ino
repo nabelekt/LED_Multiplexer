@@ -2,7 +2,7 @@
   modified from http://www.arduino.cc/en/Tutorial/Blink
 */
 
-#define LED_PIN 1
+#define LED_PIN 0
 
 // the setup function runs once when you press reset or power the board
 void setup() {
