@@ -166,7 +166,7 @@ void check_button() {
         pattern_ind = 0;
       button_pushed = true;
     }
-     delay(200); // Ignore button push within same 1/5 second
+    delay(200); // Ignore button push within same 1/5 second
   }
 }
 
