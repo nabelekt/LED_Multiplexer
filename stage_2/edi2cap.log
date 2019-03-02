@@ -1,0 +1,39 @@
+
+Copyright (c) 2006-2016, Elgris Technologies, Inc.
+
+EDIF 2 0 0 to OrCAD Capture Schematic Conversion Program SPB 17.20_1.102 built Feb  3 2016
+
+Started on Sat Mar 02 12:06:48 2019
+
+Reading config file C:\Users\Thomas Nabelek\Downloads\SL19-121\EDI2CAP.CFG
+
+Processing EDIF 2 0 0  file C:\Users\Thomas Nabelek\Downloads\SL19-121\SL19-121.edf
+
+This EDIF file has unrecognized origin.
+
+EDIF 200 parsing finished
+
+Design has no schematics => OrCAD Schematic will not be created
+Library C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2\SL19-121.OLB is created
+              Design Unit is equal to 0.00001000 inches
+              User pinSpacing is equal to : 0.10000000 inches
+              Calculated grid resolution is equal to: 10000 Design Units
+Design file has no schematics
+Converting Unreferenced Symbols from Design libraries
+Writing C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2\SL19-121.INI file
+Library C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2\SL19-121.OLB is being saved
+   ADVICE: If you DON'T LIKE the result:
+    Do another orcadwrite run using one of the following sets of OrCAD writer options:
+        'Min pin to pin spacing'=0.05000 inch(s), 'Grid'=5000 design unit(s), 
+             results in 0 hotspots out of grid
+        'Min pin to pin spacing'=0.02500 inch(s), 'Grid'=2500 design unit(s), 
+             results in 0 hotspots out of grid
+        'Min pin to pin spacing'=0.02000 inch(s), 'Grid'=2000 design unit(s), 
+             results in 0 hotspots out of grid
+        'Min pin to pin spacing'=0.01250 inch(s), 'Grid'=1250 design unit(s), 
+             results in 0 hotspots out of grid
+
+Finished on Sat Mar 02 12:06:49 2019
+
+
+0 errors detected, 0 warnings detected

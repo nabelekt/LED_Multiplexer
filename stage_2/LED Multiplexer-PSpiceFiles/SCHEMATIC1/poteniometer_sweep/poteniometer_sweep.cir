@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-poteniometer_sweep"  [ \\aerobus3\Users6$\tnabelek\My Documents\Development Projects\LED_Multiplexer\stage_2\LED Multiplexer-PSpiceFiles\SCHEMATIC1\poteniometer_sweep.sim ] 
+
+** Creating circuit file "poteniometer_sweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\tnabelek\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM OHM 1 1000 5 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

@@ -15,25 +15,7 @@
     (File ".\led multiplexer-pspicefiles\schematic1\schematic1.net"
       (Type "Report")))
   (Folder "PSpice Resources"
-    (Folder "Simulation Profiles"
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\led multiplexer-pspicefiles\schematic1\multiplexer_sim.sim"
-        (DisplayName "SCHEMATIC1-multiplexer_sim")
-        (Type "PSpice Profile"))
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\led multiplexer-pspicefiles\schematic1\potentiometer_sweep.sim"
-        (DisplayName "SCHEMATIC1-Potentiometer_Sweep")
-        (Type "PSpice Profile"))
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\led multiplexer-pspicefiles\schematic1\transistor_r_sweep.sim"
-        (DisplayName "SCHEMATIC1-transistor_r_sweep")
-        (Type "PSpice Profile"))
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\led multiplexer-pspicefiles\schematic1\cl_ohm-sweep.sim"
-        (DisplayName "SCHEMATIC1-CL_OHM-sweep")
-        (Type "PSpice Profile"))
-      (ActiveProfile
-         ".\led multiplexer-pspicefiles\schematic1\multiplexer_sim.sim"))
+    (Folder "Simulation Profiles")
     (Folder "Model Libraries"
       (Sort User))
     (Folder "Stimulus Files"
@@ -46,13 +28,12 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1C\led multiplexer.dsn")
+         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2\led multiplexer.dsn")
       (Path "Design Resources"
-         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_1C\led multiplexer.dsn"
+         "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2\led multiplexer.dsn"
          "SCHEMATIC1")
       (Path "Design Resources" "Library")
-      (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles"))
+      (Path "PSpice Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -62,15 +43,35 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1448 52 481")
-        (Scroll "-272 148")
-        (Zoom "106")
+        (Placement "44 0 1 -1 -1 -8 -31 182 1578 182 611")
+        (Scroll "-189 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_1C\LED MULTIPLEXER.DSN")
+         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2\LED MULTIPLEXER.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1")))
   (PartMRUSelector
+    (SPDT
+      (FullPartName "SPDT.Normal")
+      (LibraryName
+         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2\SL19-121.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\FILTSUB.OLB")
+      (DeviceIndex "0"))
+    (L7805CV
+      (FullPartName "L7805CV.Normal")
+      (LibraryName
+         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2\L7805CV.OLB")
+      (DeviceIndex "0"))
+    (PMIC-CJ78M05
+      (FullPartName "PMIC-CJ78M05.Normal")
+      (LibraryName
+         "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2\PMIC-L7805CV-DGTO-220.OLB")
+      (DeviceIndex "0"))
     (SW-SPST-NO-4
       (FullPartName "SW-SPST-NO-4.Normal")
       (LibraryName
@@ -117,4 +118,5 @@
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\OSRAM_5MMRADIAL.OLB")
       (DeviceIndex "0")))
-  (LastUsedLibraryBrowseDirectory "C:\Users\Thomas Nabelek\Downloads"))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2"))
