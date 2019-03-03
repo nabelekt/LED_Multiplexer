@@ -43,9 +43,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 182 1578 182 611")
-        (Scroll "-301 105")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -8 -31 182 1578 182 611")
+        (Scroll "919 726")
+        (Zoom "417")
         (Occurrence "/"))
       (Path
          "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2\LED MULTIPLEXER.DSN")
