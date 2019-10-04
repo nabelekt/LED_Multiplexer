@@ -41,6 +41,7 @@ void pattern_C() {
 
 void pattern_D() {
   // Single light off around in a circle CCW with center light lit
+  multiplex_LEDs(0b110, 0b111, 0b111);
   multiplex_LEDs(0b111, 0b110, 0b111);
   multiplex_LEDs(0b111, 0b111, 0b110);
   multiplex_LEDs(0b111, 0b111, 0b101);
@@ -48,7 +49,6 @@ void pattern_D() {
   multiplex_LEDs(0b111, 0b011, 0b111);
   multiplex_LEDs(0b011, 0b111, 0b111);
   multiplex_LEDs(0b101, 0b111, 0b111);
-  multiplex_LEDs(0b110, 0b111, 0b111);
   button_pushed = false;
 }
 
