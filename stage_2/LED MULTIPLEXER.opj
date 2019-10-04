@@ -33,7 +33,8 @@
          "C:\Users\Thomas Nabelek\Desktop\LED_Multiplexer\stage_2\led multiplexer.dsn"
          "SCHEMATIC1")
       (Path "Design Resources" "Library")
-      (Path "PSpice Resources"))
+      (Path "PSpice Resources")
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -43,9 +44,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 182 1578 182 611")
-        (Scroll "919 726")
-        (Zoom "417")
+        (Placement "44 2 3 -1 -1 -8 -31 182 1578 182 611")
+        (Scroll "0 0")
+        (Zoom "232")
         (Occurrence "/"))
       (Path
          "C:\USERS\THOMAS NABELEK\DESKTOP\LED_MULTIPLEXER\STAGE_2\LED MULTIPLEXER.DSN")
