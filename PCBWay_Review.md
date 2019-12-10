@@ -23,6 +23,8 @@ I would also like to see lower assembly costs for single prototype boards. $30 t
 
 ![Assembly Costs](https://hackster.imgix.net/uploads/attachments/1033469/screen_shot_2019-12-09_at_7_28_49_pm_cBp2kqxC8n.png?auto=compress%2Cformat&w=740&h=555&fit=max)
 
+When I ordered my boards, I expected to receive a solder stencil, but I did not. A solder stencil could have made Step 3 of Stage 5 a bit clearner and easier. When I asked PCBWay about this, I was told: "when the assembly service completed, we uaually do not send the solder stencil to customer unless you have special needs... if you really want solder stencil, for your next order, we can send it to you with your special need."
+
 As for quality, I was very pleased. The fabrication of both the Stage 4 and Stage 5 boards left me nothing to complain about. Assembly for Stage 5b was equally satisfying.
 
 All in all, I was pleased with my PCBWay experience.
